@@ -25,4 +25,11 @@ public class playerMovement : MonoBehaviour
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
     }
+        private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.tag == "Enemy")
+        {
+            Debug.Log("GameOver");
+            Destroy(gameObject);
+        }
+}
 }

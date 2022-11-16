@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Scaler
   - SceneChanger
+  - waypoint
+  - enemy2waypoint
+  - Enemy
   layers:
   - Default
   - TransparentFX
