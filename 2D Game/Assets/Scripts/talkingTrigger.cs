@@ -15,4 +15,10 @@ public class talkingTrigger : MonoBehaviour
     {
         
     }
+            private void OnTriggerEnter2D(Collider2D other) {
+        if(other.gameObject.name == "talkingTrigger")
+        {
+            Debug.Log("i'm suppose to tell you how many levels are left but the programmer dose does not know how to do that yet :(");
+        }
+    }
 }
